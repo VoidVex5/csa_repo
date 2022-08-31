@@ -22,3 +22,22 @@ Q: A physics student gets unexpected results when using the code
 to compute values according to the formula F = Gm1m2 / r2. Explain the problem and correct the code.
 A: Solution: It divides by r, then multiplies by r (instead of dividing by r *r). Use parentheses:
     double force = G * mass1 * mass2 / (r * r);
+
+java LeapYear: Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+java LeapYear 1975.5: Exception in thread "main" java.lang.NumberFormatException: For input string: "1975.5"
+java LeapYear -1975: false
+java LeapYear 1975 1976 1977: false
+
+Poison parentheses. Find a legal Java expression that leads to a compile-time error when you add parentheses around a subexpression to to document the order of evaluation that would take place in their absence.
+Solution: The literal value 2147483648 (2^31) is permitted only as an operand of the unary minus operator, i.e., -2147483648. Enclosing it in parentheses, i.e., -(2147483648), leads to a compile-time error. Similar ideas with the literal value 9223372036854775808L (2^63).
+
+Exponentiation. What is wrong with the following code fragment to compute a2, where a is of type double?
+double b = a^2;
+Solution: In Java, ^ does not mean exponentiation (it's the exclusive or function from logic). Use a*a instead. To compute ax, use Math.pow(a, x). Note that Math.pow() returns a double so that you would need an explicit cast if a and b in the above example were integers.
+
+What of the following statements is legal?
+boolean b = 1;
+boolean b = true;
+boolean b = "true";
+boolean b = True;
+Solution: Only the second one.
