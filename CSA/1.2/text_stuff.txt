@@ -1,0 +1,24 @@
+public class Quadratic {
+
+    public static void main(String[] args) {
+        double b = Double.parseDouble(args[0]);
+        double c = Double.parseDouble(args[1]);
+
+        double discriminant = b*b - 4.0*c;
+        double sqroot =  Math.sqrt(discriminant);
+
+        double root1 = (-b + sqroot) / 2.0;
+        double root2 = (-b - sqroot) / 2.0;
+
+        System.out.println(root1);
+        System.out.println(root2);
+    }
+}
+
+in here they use the provided Math function to take its square root
+
+Q: A physics student gets unexpected results when using the code
+    double force = G * mass1 * mass2 / r * r;
+to compute values according to the formula F = Gm1m2 / r2. Explain the problem and correct the code.
+A: Solution: It divides by r, then multiplies by r (instead of dividing by r *r). Use parentheses:
+    double force = G * mass1 * mass2 / (r * r);
