@@ -1,0 +1,1 @@
+constructors allow you to create classes and set certain values within the class or perform an initialization. You can define more than one constructor and that's call "overloading". Making all objects nullable is a terrible decision and there should be a separate type constructor for nullable types with objects being non nullable by default.

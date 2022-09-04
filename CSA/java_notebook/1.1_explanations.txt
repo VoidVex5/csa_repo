@@ -1,0 +1,19 @@
+Describe what happens if, in HelloWorld.java, you omit:
+a) main: hellow.java:3: error: <identifier> expected
+b) String: hellow.java:3: error: <identifier> expected
+c) HelloWorld: hellow.java:1: error: <identifier> expected
+d) System.out:  hellow.java:6: error: cannot find symbol
+e) println: hellow.java:6: error: <identifier> expected
+f) the ; : hellow.java:6: error: ';' expected
+g) the first ": hellow.java:6: error: unclosed string literal
+h) the second ": hellow.java:6: error: unclosed string literal
+i) the first {: hellow.java:3: error: class, interface, enum, or record expected
+j) the second {: hellow.java:9: error: class, interface, enum, or record expected
+k) the first }: hellow.java:9: error: reached end of file while parsing
+l) the second }: hellow.java:7: error: reached end of file while parsing
+Describe what happens if, in HelloWorld.java, you misspell (by, say, omitting the second letter)
+a) main: successful compilation
+b) String: HelloWorld.java:3: error: cannot find symbol
+c) HelloWorld: HelloWorld.java:1: error: class HlloWorld is public, should be declared in a file named HlloWorld.java
+d) System.out: HelloWorld.java:6: error: package Sstem does not exist
+e) println: HelloWorld.java:6: error: cannot find symbol

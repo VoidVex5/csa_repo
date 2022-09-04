@@ -1,0 +1,1 @@
+Classes are just user defined data types consisting of internal variables (attributes) and functions (methods). The methods are used to interact with the class instance (object) and attributes are just internal state. I also coded a turtle to make squares and shapes.
