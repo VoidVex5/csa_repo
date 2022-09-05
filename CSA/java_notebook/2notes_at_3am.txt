@@ -1,0 +1,1 @@
+literally functions that are associated with instances of a class. They sometimes return a value, sometimes don't. They might edit internal state, they might not. The only thing constant it that they're a kind of method that is associated with a class with no formal arguments.
