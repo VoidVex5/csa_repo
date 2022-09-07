@@ -1,0 +1,6 @@
+Project name: Hisar Programming Language for the Rasberry Pi Pico
+Language Name: [TBA]
+Description: A systems programming language designed specifically for the Rasberry Pi Pico. Characteristics of the language will be its low SRAM 
+requiremnt, small binaries, orthonogality, and manual memory management. Syntax will be similar to C, with some quality of life changes. 
+The compiler will be based on LLVM for simplicity but it might be self hosted if it can be managed. While designed specifically for Rasberry Pi Pico, it 
+should be able to work for all chips with ARMv6-M architecture.
