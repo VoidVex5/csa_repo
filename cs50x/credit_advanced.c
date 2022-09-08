@@ -24,7 +24,6 @@ int main(int argc, char** argv) {
                 count_s++;
             }
             else {
-                printf("argv: %c\n", argv[1][i]);
                 first_digits[count_f] = argv[1][i] - 48;
                 count_f++;
             }
