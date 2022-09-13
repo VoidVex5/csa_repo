@@ -15,6 +15,10 @@ public class notc {
         System.out.println(y);
         System.out.println(z);
         // all give the same error: variable _name_ might not have been initialized
+	// initialise the values
+	// initialise the class using the constructor
+	// initialise the string using new and ur preferred initalisation
+	// initalise the int by giving it an appropriate integer value
     }
 
 }
