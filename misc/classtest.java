@@ -30,7 +30,7 @@ class cat {
 
 public class classtest { // main classs
 	public static void main(String[] args) {
-		cat Cat = new cat(12, 3.7, "Boncuk", false); // an intentional cat
-		cat u_cat = new cat(); // default cat
+		cat Cat = new cat(12, 3.7, "Boncuk", false); // a constructed cat instance
+		cat u_cat = new cat(); // a default cat instance
 	}
 }
